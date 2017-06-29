@@ -1,6 +1,6 @@
 # Food Blog
 
-This app was developed as part of selection proccess to interniship as front-end developer at Webedia Group in Rio de Janeiro.
+This application was developed as part of the selection process to internship in front-end developer at Webedia Group in Rio de Janeiro.
 
 ## Links
 [Blog](http://editordoapp.16mb.com/blog/)
