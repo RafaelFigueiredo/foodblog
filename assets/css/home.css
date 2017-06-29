@@ -1,0 +1,296 @@
+/************** General visual propeties **********************/
+body{
+	background-color: rgb(237,237,237);
+	font-family: 'futura_bk_btbook', 'Lato', sans-serif !important;
+}
+
+hr{
+	width: 30%;
+	border-top: 1px solid rgb(254,107,30);
+}
+
+h1,h2,h3,h4{
+	color: rgb(254,107,30);	
+}
+h1{
+	font-size: 24px;
+}
+
+h2{
+	font-size: 20px;
+}
+
+h3{
+	font-size: 16px;
+}
+
+/************* Menu ******************************************/
+.nav{
+	font-size: 10px;
+}
+.img-logo-top{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.img-logo-menu{
+	display: none;
+}
+
+
+.onMobile{
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+	.img-logo-top{
+		display: none;
+	}
+
+  .onMobile{
+    display: block
+  }
+
+	.img-logo-menu{
+		display: block;
+	}
+}
+
+
+	
+
+.img-food{
+	margin: 30px;
+	width: 100%;
+}
+
+.navbar-default{
+	background-color: #fff;
+	border-color: #fff;
+	box-shadow: 0px 10px 13px -17px #000000;
+
+}
+
+.thumbnail{
+	padding: 10px;
+}
+
+
+div.href {
+  float: left;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+
+/* from: http://stackoverflow.com/questions/796087/make-a-div-into-a-link */
+div.href a span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  /* edit: added z-index */
+  z-index: 1;
+
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+}
+
+div.href:hover {
+  background-color: rgb(250,250,250);  
+}
+
+div.href:active {
+  background-color: rgb(250,250,250);  
+  top: +2px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    margin:0;
+  }
+  /* General styles for all menus */
+  .cbp-spmenu {
+    background: #f8f8f8;
+    position: fixed;
+    padding:0;
+    margin:0 !important;
+    overflow-x:hidden;
+    overflow-y:visible;
+    display:block;
+  }
+  .cbp-spmenu h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: #0d77b6;
+  }
+  .cbp-spmenu a {
+    display: block;
+  }
+  /* Orientation-dependent styles for the content of the menu */
+  .cbp-spmenu-vertical {
+    width: 260px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .cbp-spmenu-horizontal {
+    width: 100%;
+    height: 150px;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  .cbp-spmenu-horizontal h3 {
+    height: 100%;
+    width: 20%;
+    float: left;
+  }
+  .cbp-spmenu-horizontal a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd;
+  }
+  /* Vertical menu that slides from the left or right */
+  .cbp-spmenu-left {
+    left: -260px;
+  }
+  .cbp-spmenu-right {
+    right: -260px;
+  }
+  .cbp-spmenu-left.cbp-spmenu-open {
+    left: 0px;
+  }
+  .cbp-spmenu-right.cbp-spmenu-open {
+    right: 0px;
+  }
+  /* Horizontal menu that slides from the top or bottom */
+  .cbp-spmenu-top {
+    top: -150px;
+  }
+  .cbp-spmenu-bottom {
+    bottom: -150px;
+  }
+  .cbp-spmenu-top.cbp-spmenu-open {
+    top: 0px;
+  }
+  .cbp-spmenu-bottom.cbp-spmenu-open {
+    bottom: 0px;
+  }
+  /* Push classes applied to the body */
+  .cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+  }
+  .cbp-spmenu-push-toright {
+    left: 260px;
+  }
+  .cbp-spmenu-push-toleft {
+    left: -260px;
+  }
+  /* Transitions */
+  .cbp-spmenu,
+  .cbp-spmenu-push {
+    -webkit-transition: all 1.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+.navbar-toggle {
+  border: none;
+  background: orange !important;
+  width: 35px;
+  height: 35px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 9px;
+  margin-left: 10px;
+  border-radius: 22px;
+}
+.navbar-toggle:hover {
+  background: lightgray !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    width: 15px;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #orange;
+    width: 15px;
+}
+
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+/* 
+ * Image Upload
+ */
+
+ .thumb {
+    margin-bottom: : 10px;
+    width: 400px;
+    height: 200px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
+form .progress {
+    line-height: 15px;
+}
+}
+
+.progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+}
+
+.progress div {
+    font-size: smaller;
+    background: orange;
+    width: 0;
+}
